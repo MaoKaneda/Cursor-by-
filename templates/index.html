@@ -156,21 +156,18 @@
             if (isUser) {
                 messageDiv.textContent = message;
             } else {
-                // ペンギン風アイコンと吹き出し
+                // 丸いクマさんアイコンと吹き出し
                 const iconDiv = document.createElement('div');
                 iconDiv.className = 'ai-icon';
                 iconDiv.innerHTML = `
                     <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="32" cy="36" rx="20" ry="20" fill="#B6E2A1" stroke="#7CB66A" stroke-width="2"/>
-                        <ellipse cx="32" cy="44" rx="10" ry="8" fill="#fff"/>
-                        <ellipse cx="26" cy="34" rx="2.2" ry="2.5" fill="#444"/>
-                        <ellipse cx="38" cy="34" rx="2.2" ry="2.5" fill="#444"/>
-                        <ellipse cx="32" cy="42" rx="2.5" ry="1.2" fill="#F9C784"/>
-                        <ellipse cx="22" cy="48" rx="2.5" ry="1.2" fill="#B6E2A1"/>
-                        <ellipse cx="42" cy="48" rx="2.5" ry="1.2" fill="#B6E2A1"/>
-                        <ellipse cx="32" cy="52" rx="2.5" ry="1.2" fill="#F9C784"/>
-                        <ellipse cx="32" cy="40" rx="1.2" ry="1" fill="#444"/>
-                        <path d="M30 40 Q32 42 34 40" stroke="#444" stroke-width="1.5" fill="none"/>
+                        <ellipse cx="20" cy="20" rx="8" ry="8" fill="#B89B8B"/>
+                        <ellipse cx="44" cy="20" rx="8" ry="8" fill="#B89B8B"/>
+                        <ellipse cx="32" cy="40" rx="22" ry="22" fill="#B89B8B"/>
+                        <ellipse cx="32" cy="36" rx="4" ry="4" fill="#E2CFC3"/>
+                        <ellipse cx="27" cy="34" rx="1.2" ry="1.5" fill="#3E2C23"/>
+                        <ellipse cx="37" cy="34" rx="1.2" ry="1.5" fill="#3E2C23"/>
+                        <ellipse cx="32" cy="38" rx="2.2" ry="1.7" fill="#3E2C23"/>
                     </svg>
                 `;
                 const bubbleDiv = document.createElement('div');
