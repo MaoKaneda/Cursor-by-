@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 環境変数ファイル
+.env
+
+# VSCodeやMacの不要ファイル
+.vscode/
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# その他
+*.log 
+
+COHERE_API_KEY=93YJh03fksowrNQAxEutBeYefSUKPNB92TreDSPs
+
