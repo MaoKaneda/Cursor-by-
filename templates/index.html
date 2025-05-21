@@ -138,6 +138,7 @@
             }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div style="width:100%;background:#162955;color:#fff;padding:16px 0;text-align:center;font-size:1.7rem;font-weight:bold;letter-spacing:0.1em;box-shadow:0 2px 8px #0001;position:sticky;top:0;z-index:10;">ロボくんに聞いてみよう</div>
@@ -174,10 +175,8 @@
                 `;
                 const bubbleDiv = document.createElement('div');
                 bubbleDiv.className = 'ai-bubble';
-                // 改行と太字を反映
-                let formatted = message.replace(/\n/g, '<br>');
-                formatted = formatted.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
-                bubbleDiv.innerHTML = formatted;
+                // MarkdownをHTMLに変換
+                bubbleDiv.innerHTML = marked.parse(message);
                 messageDiv.appendChild(iconDiv);
                 messageDiv.appendChild(bubbleDiv);
             }
