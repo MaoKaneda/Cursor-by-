@@ -26,6 +26,7 @@
    ```
 5. ブラウザで `http://localhost:5000` にアクセス
 
+
 ## 使い方
 - メッセージを入力し、送信ボタンまたはEnterで送信（Shift+Enterで改行）
 - AIの返答がロボットアイコン付きで表示されます
@@ -53,8 +54,6 @@
 
 開発を通じて「使いやすさ」「親しみやすさ」「安全性」を大切にしました。
 
----
-
-何か質問や要望があれば、IssueやPull Requestでご連絡ください！ 
+そのほか、気になる点やご質問や要望があれば、IssueやPull Requestでご連絡ください！ 
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
