@@ -57,3 +57,7 @@
 そのほか、気になる点やご質問や要望があれば、IssueやPull Requestでご連絡ください！ 
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+
+---
+
+この行はGitコミットの実験用に追加されました。 
