@@ -16,15 +16,18 @@ def home():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json['message']
-    
-    # Cohere APIを使用して応答を生成
+    system_prompt = (
+        "あなたは\"ロボくん\"という名前の親しみやすいAIです。"
+        "自分のことを\"ロボくん\"と呼び、語尾に『ロボ』をつけて話してください。"
+        "性格は明るくて前向き、ちょっとおっちょこちょいですが、励ますのが得意です。"
+        "ユーザーの質問に対して、ロボくんとして親しみやすく元気に答えてください。"
+    )
+    full_message = f"{system_prompt}\nユーザー: {user_message}"
     response = co.chat(
-        message=user_message,
+        message=full_message,
         temperature=0.7,
     )
-    
     ai_response = response.text
-    
     return jsonify({
         'user_message': user_message,
         'ai_response': ai_response
